@@ -1,1 +1,1 @@
-web: gunicorn wiki/encyclopedia/apps.py
+web: gunicorn encyclopedia/apps.py
