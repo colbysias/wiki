@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CSRF_TRUSTED_ORIGINS = ['https://colbysias-verbose-succotash-6x6rq6j699xc54g4-8000.preview.app.github.dev']
+
 
 # Application definition
 

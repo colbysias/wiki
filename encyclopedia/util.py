@@ -10,7 +10,7 @@ def list_entries():
     """
     _, filenames = default_storage.listdir("entries")
     return list(sorted(re.sub(r"\.md$", "", filename)
-                for filename in filenames if filename.endswith(".md")))
+                       for filename in filenames if filename.endswith(".md")))
 
 
 def save_entry(title, content):
@@ -35,3 +35,12 @@ def get_entry(title):
         return f.read().decode("utf-8")
     except FileNotFoundError:
         return None
+
+
+def search(query):
+    """
+    Searches for a given query [title] in the encyclopedia [all entries titles].
+    """
+    _, filenames = default_storage.listdir("entries")
+    return list(sorted(re.sub(r"\.md$", "", filename)
+                       for filename in filenames if filename.endswith(".md") and query.lower() in filename.lower()))

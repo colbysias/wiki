@@ -22,7 +22,7 @@ def entry(request, title):
 
 def search(request):
     """ Loads requested title page if it exists, else displays search results """
-    q = request.POST.get('q').strip()
+    q = request.GET.get('q').strip()
     if q in util.list_entries():
         return redirect("entry", title=q)
     return render(request, "encyclopedia/search.html", {"entries": util.search(q), "q": q})
