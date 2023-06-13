@@ -1,1 +1,1 @@
-web: gunicorn encyclopedia/apps.py
+web: gunicorn wiki/wiki/wsgi.py
