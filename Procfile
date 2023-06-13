@@ -1,1 +1,1 @@
-web: gunicorn apps:encyclopedia
+web: gunicorn apps:name
