@@ -1,1 +1,1 @@
-web: gunicorn wiki/wiki/wsgi.py
+web: gunicorn wiki/wsgi.py
