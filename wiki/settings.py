@@ -25,7 +25,7 @@ SECRET_KEY = '%710m*zic)#0u((qugw#1@e^ty!c)9j04956v@ly(_86n$rg)h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["0.0.0.0"]
+ALLOWED_HOSTS = ["colbysias-wiki.herokuapp.com"]
 
 CSRF_TRUSTED_ORIGINS = ['https://colbysias-verbose-succotash-6x6rq6j699xc54g4-8000.preview.app.github.dev']
 
