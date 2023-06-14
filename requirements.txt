@@ -1,4 +1,4 @@
-markdown
+markdown2
 django
 gunicorn
 psycopg2
